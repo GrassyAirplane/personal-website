@@ -3,7 +3,7 @@ const Navbar = () => {
         <>
             <h1>Euan</h1>
             <ul>
-                <li>About</li>
+                <li>1. About</li>
                 <li>Experience </li>
                 <li>Projects </li>
                 <li>Contact </li>
