@@ -4,8 +4,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
 }
 
 body {
   background-color: var(--main-bg-color);
+  margin: 0;
+  border: 4px solid black;
 }
