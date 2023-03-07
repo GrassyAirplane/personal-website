@@ -1,7 +1,19 @@
 .navigation-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* ^^ Sticky ^^*/
     display: flex;
     align-items: center;
     padding: 0.35rem 0 0.35rem 0;
+    border-bottom: 2px solid black;
+    background-color: transparent; 
+    backdrop-filter: blur(10px); 
+  }
+  
+.special-li {
+    list-style: none;
+    padding: 0 1rem 0 1rem;
 }
 
 .navigation-bar ul {
@@ -9,9 +21,9 @@
     align-items: center;
     list-style: none;
     margin-right: auto;
-    font-family: 'mono','Roobert', sans-serif;
+    font-family: 'Roobert', sans-serif;
 
-    padding-left: 1rem;
+    padding-left: 0;
 }
 
 .navigation-bar ul li {
@@ -34,7 +46,7 @@
 }
 
 .navigation-bar ul li:hover {
-    color: rgb(170, 170, 170);
+    color: rgb(219, 219, 219);
     cursor: pointer;
 }
 

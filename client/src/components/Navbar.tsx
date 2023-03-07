@@ -9,6 +9,7 @@ import resumeIcon from '../assets/resume-4-svgrepo-com.svg'
 const Navbar = () => {
     useEffect(() => {
         const sr = ScrollReveal();
+        
         sr.reveal('.navigation-list', {
             duration: 200,
             distance: '20px',
@@ -55,8 +56,8 @@ const Navbar = () => {
     return (
         <>
             <nav className="navigation-bar">
+                    <li className='special-li'><img className='home-bar-icon' src={homeIcon}></img></li>
                 <ul className='navigation-list'>
-                    <li><img className='home-bar-icon' src={homeIcon}></img></li>
                     <li>About</li>
                     <li>Experience </li>
                     <li>Projects </li>
