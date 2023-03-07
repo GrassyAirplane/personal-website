@@ -9,7 +9,7 @@ import resumeIcon from '../assets/resume-4-svgrepo-com.svg'
 const Navbar = () => {
     useEffect(() => {
         const sr = ScrollReveal();
-        
+
         sr.reveal('.navigation-list', {
             duration: 200,
             distance: '20px',
@@ -58,10 +58,11 @@ const Navbar = () => {
             <nav className="navigation-bar">
                     <li className='special-li'><img className='home-bar-icon' src={homeIcon}></img></li>
                 <ul className='navigation-list'>
-                    <li>About</li>
-                    <li>Experience </li>
-                    <li>Projects </li>
-                    <li>Contact </li>
+                    <li className='about'>About</li>
+                    <li className='experience'>Experience </li>
+                    <li className='project'>Projects </li>
+                    <li className='interest'>Interests </li>
+                    <li className='contact'>Contact </li>
                 </ul>
                 <section className='icon-section'>
                     <a className='hover-animation' href='https://github.com/GrassyAirplane' target='_blank'>

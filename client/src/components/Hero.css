@@ -25,13 +25,16 @@ main {
 }
   
 .hero-image {
-    flex-grow: 1; 
+    flex-grow: 1;
+    text-align: right;
 }
 
 .hero-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+
     align-items: center; /* Vertically center the content */
-    height: 10rem;
+    max-height: 20rem;
     border-bottom: 2px solid black;
 }
 
@@ -52,3 +55,8 @@ main {
     margin: 0;
 }
 
+.right-icon {
+    max-height: 5rem;
+    max-width: 5rem;
+    padding-right: 4rem;
+}

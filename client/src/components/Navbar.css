@@ -46,8 +46,27 @@
 }
 
 .navigation-bar ul li:hover {
-    color: rgb(219, 219, 219);
     cursor: pointer;
+}
+
+.about:hover {
+    color: #D661FF;
+}
+
+.experience:hover {
+    color: #FFCB46;
+}
+
+.project:hover {
+    color: #FF0000;
+}
+
+.interest:hover {
+    color: #008080;
+}
+
+.contact:hover {
+    color: #008080;
 }
 
 .navigation-bar-icons {

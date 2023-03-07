@@ -1,6 +1,7 @@
 import './Hero.css'
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal'
+import rightIcon from '../assets/right-arrow-svgrepo-com.svg'
 
 const Hero = () => {
 
@@ -68,33 +69,37 @@ const Hero = () => {
                 <section className='first-section hero-section'>
                     <article className='hero-article'>
                         <h1 className='hero-heading' style={{whiteSpace: 'nowrap'}}>I'm Euan</h1>
-                        <h2 className='hero-subheading'> Full Stack Developer</h2>
+                        <h2 className='hero-subheading' style={{whiteSpace: 'nowrap'}}> Full Stack Developer</h2>
                     </article>
-                        <article className='hero-image'>
+                    <article className='hero-image'>
+                        <img className='right-icon' src={rightIcon}></img>
                     </article>
                 </section>
                 <section className='second-section hero-section'>
                     <article className='hero-article'>
                         <h1 className='hero-heading' style={{whiteSpace: 'nowrap'}}>I Work</h1>
-                        <h2 className='hero-subheading'> Part Time & Internship </h2>
+                        <h2 className='hero-subheading' style={{whiteSpace: 'nowrap'}}> Part Time & Internship </h2>
                     </article>
-                        <article className='hero-image'>
+                    <article className='hero-image'>
+                        <img className='right-icon' src={rightIcon}></img>
                     </article>
                 </section>
                 <section className='third-section hero-section'>
                     <article className='hero-article'>
                         <h1 className='hero-heading' style={{whiteSpace: 'nowrap'}}>I Build</h1>
-                        <h2 className='hero-subheading'> Web Applications</h2>
+                        <h2 className='hero-subheading' style={{whiteSpace: 'nowrap'}}> Web Applications</h2>
                     </article>
-                        <article className='hero-image'>
+                    <article className='hero-image'>
+                        <img className='right-icon' src={rightIcon}></img>
                     </article>
                 </section>
                 <section className='fourth-section hero-section'>
                     <article className='hero-article'>
                         <h1 className='hero-heading' style={{whiteSpace: 'nowrap'}}>I Play</h1>
-                        <h2 className='hero-subheading-special'> Hobbies & Interest's</h2>
+                        <h2 className='hero-subheading-special' style={{whiteSpace: 'nowrap'}}> Hobbies & Interest's</h2>
                     </article>
-                        <article className='hero-image'>
+                    <article className='hero-image'>
+                        <img className='right-icon' src={rightIcon}></img>
                     </article>
                 </section>
             </main>
