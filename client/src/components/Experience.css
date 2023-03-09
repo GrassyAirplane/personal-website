@@ -1,0 +1,9 @@
+section.experience-section {
+    background-color: #FFCB46;
+    height: 100vh;
+    border-bottom: 2px solid black;
+}
+
+section.experience-section h2 {
+    margin: 0;
+}

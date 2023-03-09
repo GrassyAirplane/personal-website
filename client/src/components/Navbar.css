@@ -14,6 +14,7 @@
 .special-li {
     list-style: none;
     padding: 0 1rem 0 1rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .navigation-bar ul {
@@ -39,6 +40,7 @@
     max-width: 2rem;
 
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .home-bar-icon:hover {
@@ -65,8 +67,21 @@
     color: #008080;
 }
 
-.contact:hover {
-    color: #008080;
+.gold:hover {
+    line-height: 1;
+    text-align: center;
+    background: linear-gradient(to right, violet, rgb(152, 36, 235), rgb(123, 0, 210), #D661FF, rgb(123, 0, 210), rgb(152, 36, 235), violet);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    background-position: left;
+    animation: shine 1.5s linear infinite;
+  }
+  
+@keyframes shine {
+    50% {
+        background-position: right;
+    }
 }
 
 .navigation-bar-icons {
@@ -91,4 +106,29 @@
     align-items: center;
     justify-content: space-between;
     min-width: 10rem;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.icons {
+    display: flex;
+    margin-left: auto;
+}
+
+@media (max-width: 650px) {
+    .navigation-list {
+      display: none !important;
+    }
+    .navigation-bar-icons {
+      display: none;
+    }
+    .hamburger-icon {
+        display: block;
+        transition: transform 0.3s ease-in-out;
+      }
+      .hamburger-icon:hover {
+        transform: rotate(-180deg);
+      }
 }
