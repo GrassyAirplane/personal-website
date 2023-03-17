@@ -107,7 +107,7 @@ const Navbar = () => {
                 <ul className='navigation-list'>
                     <li className='about'><a href="#about-section">About</a></li>
                     <li className='experience'><a href="#experience-section">Experience</a></li>
-                    <li className='project'><a href=''>Projects </a></li>
+                    <li className='project'><a href='#build-section'>Projects </a></li>
                     <li className='interest'>Interests </li>
                     <li className='contact gold'><a href='#section-contact'>Contact</a></li>
                 </ul>

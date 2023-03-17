@@ -13,14 +13,14 @@ const About = () => {
             easing: 'ease-out',
             origin: 'bottom',
             delay: 100,
-            reset: true,
+            reset: false,
         });
         sr.reveal('.about-second', {
             duration: 400,
             distance: '2rem',
             easing: 'ease-out',
             origin: 'bottom',
-            reset: true,
+            reset: false,
             delay: 300,
         });
     }, []);

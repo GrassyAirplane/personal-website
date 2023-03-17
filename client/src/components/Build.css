@@ -1,0 +1,139 @@
+.build-section {
+    background-color:#FF0000;
+    min-height: 100vh;
+    border-top: 2px solid black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.build-card {
+    padding: 2rem;
+    border-radius: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    max-width: 15rem;
+    border-style: solid;
+    background-color: white;
+    border-width: 3px;
+    border-color: #0d0d0d #000 #000;
+    box-shadow: 15px 15px 0 0 #0d0d0d;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.build-card:hover {
+    transform: translateY(15px) translateX(15px);
+    box-shadow: 0px 0px 0 0 #0d0d0d;
+}
+
+.build-card ul li{
+    margin-top: .5rem;
+}
+
+.build-card ul{
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+#build-first-heading {
+    border-top: 2px solid black;
+}
+
+.build-heading {
+    border-bottom: 2px solid black;
+    height: 5rem;
+    display: flex;
+}
+
+.build-plus {
+    max-height: 2rem;
+    max-height: 2rem;
+    margin: auto 3rem auto auto;
+}
+
+.build-heading-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.build-heading-left-date {
+    margin-left: 3rem;
+    min-width: 15rem;
+}
+
+.build-heading-left-type {
+    min-width: 15rem;
+}
+
+.build-content {
+    border-bottom: 2px solid black;
+    background-color: #ffffb3;
+
+    display: grid;
+}
+
+.inner-build-content {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.build-plus {
+    min-height: 2.5rem;
+    transition: transform 0.4s ease-in-out;
+}
+  
+.rotate {
+    transform: rotate(45deg);
+}
+
+/* .hidden {
+    display: none;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+} */
+
+.build-content {
+    height: auto;
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: transform 0.5s ease-in-out;
+    transition: height 0.3s ease;
+    padding: 1rem;
+}
+  
+.build-content.hidden {
+    height: 0;
+    opacity: 0;
+    display: none;
+    transform: translateY(-100%);
+}
+
+@media (max-width: 857px) {
+    .build-heading-left-title {
+        display: none;
+    }
+    
+    .build-heading-left-type {
+        display: none;
+    }
+}

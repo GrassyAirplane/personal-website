@@ -1,5 +1,5 @@
 .section-contact { 
-    background-color: #008080;
+    background-color: #f79f87;
     height: 100vh;
     border-bottom: 2px solid black;
     display: flex;
@@ -63,6 +63,10 @@ em {
     
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ffff43);
     cursor: pointer;
+}
+
+#contact-p {
+    margin: .5rem 0 1rem 0;
 }
 
 @media screen and (max-width: 800px) {
