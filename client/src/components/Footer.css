@@ -1,0 +1,33 @@
+.footer-icon-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.footer {
+  height: 3rem;
+  max-height: 10rem;
+  display: flex;
+}
+
+h3 {
+  margin: auto;
+}
+
+.footer-p {
+  margin-left: auto;
+  font-weight: bold;
+  color: black;
+}
+
+.special-text-span {
+    background: linear-gradient(to right, violet, rgb(152, 36, 235), rgb(123, 0, 210), #D661FF, rgb(123, 0, 210), rgb(152, 36, 235), violet);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    background-position: left;
+    animation: shine 3s linear infinite;
+}

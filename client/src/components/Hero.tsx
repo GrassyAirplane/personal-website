@@ -99,7 +99,7 @@ const Hero = () => {
                     <section className='first-section hero-section first-hero-section'>
                         <article className='hero-article '>
                             <h1 className='hero-heading' style={{whiteSpace: 'nowrap'}}>I'm Euan</h1>
-                            <h2 className='hero-subheading' style={{whiteSpace: 'nowrap'}}> Web Developer</h2>
+                            <h2 className='hero-subheading' style={{whiteSpace: 'nowrap'}}> Full Stack Developer</h2>
                         </article>
                         <article className='hero-image'>
                             <img className='right-icon' src={rightIcon}></img>

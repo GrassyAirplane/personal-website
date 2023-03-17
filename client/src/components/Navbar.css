@@ -132,3 +132,48 @@
         transform: rotate(-180deg);
       }
 }
+
+.swal2-popup{
+    /* width: 50vh !important;
+    height: 60vh !important; */
+    border-radius: 0 !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-color: #0d0d0d #000 #000 !important;
+}
+
+.swal2-title {
+    color: #000 !important;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.swal2-content {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.swal2-confirm {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: .5rem;
+    cursor: pointer;
+    width: 6rem;
+    font-family: 'Roobert', sans-serif;
+  }
+
+.swal2-cancel {
+    background-color: black;
+    color:  whitesmoke;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-left: .5rem;
+    cursor: pointer;
+    width: 6rem;
+    font-family: 'Roobert', sans-serif;
+}

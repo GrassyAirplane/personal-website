@@ -6,6 +6,7 @@ import gitIcon from '../assets/github-svgrepo-com.svg'
 import linkedIcon from '../assets/linkedin-svgrepo-com.svg'
 import resumeIcon from '../assets/resume-4-svgrepo-com.svg'
 import hamburgerIcon from '../assets/hamburger-svgrepo-com.svg'
+import Swal from 'sweetalert2'
 
 const Navbar = () => {
     useEffect(() => {
@@ -28,7 +29,7 @@ const Navbar = () => {
             origin: 'top',
             reset: true,
             viewFactor: 0.2,
-            delay: 800,
+            delay: 700,
         });
 
         sr.reveal('.second-icon', {
@@ -38,7 +39,7 @@ const Navbar = () => {
             origin: 'top',
             reset: true,
             viewFactor: 0.2,
-            delay: 1000,
+            delay: 900,
         });
 
         sr.reveal('.third-icon', {
@@ -48,7 +49,7 @@ const Navbar = () => {
             origin: 'top',
             reset: true,
             viewFactor: 0.2,
-            delay: 1200,
+            delay: 1100,
         });
     
     }, []);
@@ -60,6 +61,45 @@ const Navbar = () => {
         });
     };
       
+    const resumeClick = () => {
+   
+        const link = document.createElement("a");
+        link.href = "/src/resume/Resume - Euan Lim.pdf"; // replace with the path to your resume file
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        // const MySwal = Swal.mixin({
+        //     customClass: {
+        //       title: 'alert-title',
+        //       htmlContainer: 'alert-html-container',
+        //       confirmButton: 'alert-confirm-button',
+        //       cancelButton: 'alert-cancel-button',
+        //       popup: 'alert-popup'
+        //     },
+        //     buttonsStyling: false,
+        //   })
+
+        // MySwal.fire({
+        //     title: "Preview my Resume?",
+        //     // text: "Download my Resume?",
+        //     icon: 'warning',
+        //     iconColor: 'black',
+        //     showCancelButton: true,
+        //     confirmButtonColor: '#3085d6',
+        //     cancelButtonColor: '#d33',
+        //     confirmButtonText: 'Preview',
+        //   }).then((result) => {
+        //     if (result.isConfirmed) {
+        //       const link = document.createElement("a");
+        //       link.href = "/src/resume/Resume - Euan Lim.pdf"; // replace with the path to your resume file
+        //       link.target = "_blank";
+        //       document.body.appendChild(link);
+        //       link.click();
+        //       document.body.removeChild(link);
+        //     }})
+    }
+
     return (
         <>
             <nav className="navigation-bar">
@@ -69,7 +109,7 @@ const Navbar = () => {
                     <li className='experience'><a href="#experience-section">Experience</a></li>
                     <li className='project'><a href=''>Projects </a></li>
                     <li className='interest'>Interests </li>
-                    <li className='contact gold'>Contact </li>
+                    <li className='contact gold'><a href='#section-contact'>Contact</a></li>
                 </ul>
                 <div className='icons'>
                     <section className='icon-section'>
@@ -79,7 +119,7 @@ const Navbar = () => {
                         <a className='hover-animation' href='https://www.linkedin.com/in/euan-lim-013181235/' target='_blank'>
                             <img className="navigation-bar-icons second-icon" src={linkedIcon}></img>
                         </a>
-                        <div className='hover-animation'>
+                        <div className='hover-animation' onClick={resumeClick}>
                             <img className="navigation-bar-icons third-icon" src={resumeIcon}></img>
                         </div>
                     </section>

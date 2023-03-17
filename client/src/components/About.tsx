@@ -32,16 +32,16 @@ const About = () => {
                     <div className='about-content-div'>
                         <h2 className='special-text about-content-title'>About Me</h2>
                         <ul className='about-content-list'>
-                            <li>I'm Euan Lim.</li>
-                            <li>Full Stack Developer.</li>
-                            <li>CS student @ Monash.</li>
-                            <li>Passion in Hackathons & Building.</li>
+                            <li>I'm Euan Lim</li>
+                            <li>Full Stack Developer</li>
+                            <li>CompSci student @ Monash</li>
+                            <li>Passion in Hackathons & Building</li>
                         </ul>
                     </div>
                 </div>
                 <div className='about-second'>
                     <div className='about-main'>
-                        <img className = 'profile-image' src={profileImage}></img>
+                        <img className = 'profile-image' src={profileImage}></img> 
                     </div>
                 </div>  
             </article>
