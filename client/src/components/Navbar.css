@@ -118,6 +118,8 @@
     margin-left: auto;
 }
 
+
+
 @media (max-width: 650px) {
     .navigation-list {
       display: none !important;
@@ -129,9 +131,7 @@
         display: block;
         transition: transform 0.3s ease-in-out;
       }
-      .hamburger-icon:hover {
-        transform: rotate(-180deg);
-      }
+
 }
 
 .swal2-popup{

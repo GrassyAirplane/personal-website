@@ -88,6 +88,10 @@ section.about-section {
     .about-content {
       grid-template-columns: 1fr;
     }
+
+    .about-second {
+        margin-top: 2rem!important;
+    }
   }
 
 section.about-section h2 {

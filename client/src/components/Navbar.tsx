@@ -60,6 +60,10 @@ const Navbar = () => {
           behavior: 'smooth',
         });
     };
+
+    const hamburgerClick = () => {
+        
+    }
       
     const resumeClick = () => {
    
@@ -123,7 +127,7 @@ const Navbar = () => {
                             <img className="navigation-bar-icons third-icon" src={resumeIcon}></img>
                         </div>
                     </section>
-                <li className='special-li hamburger-icon' onClick={handleClick}><img className='home-bar-icon' src={hamburgerIcon}></img></li>
+                <li className='special-li hamburger-icon' onClick={hamburgerClick}><img className='home-bar-icon' src={hamburgerIcon}></img></li>
             
                 </div>
                 </nav>
