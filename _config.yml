@@ -1,3 +1,2 @@
-sass:
-  load_paths:
-    - /github/workspace/client/dist
+sass: false
+css: ./client/dist/assets/index-f9f6558d.css
