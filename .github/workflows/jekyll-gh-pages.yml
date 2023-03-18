@@ -31,9 +31,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y nodejs npm
           sudo npm install -g vite
-      - name: Navigate to client directory
-        run: cd client
       - name: Install dependencies
+        run: cd client
         run: npm install
       - name: Build Vite project
         run: npm run build
