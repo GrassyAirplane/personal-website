@@ -1,5 +1,5 @@
 import './About.css'
-import profileImage from '../assets/profile.jpeg'
+import profileImage from '../assets/Profile.jpeg'
 import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react';
 
