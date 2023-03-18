@@ -57,11 +57,11 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: client/dist
-          destination: ./docs
+          destination: ./
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          folder: docs
+          folder: ./
