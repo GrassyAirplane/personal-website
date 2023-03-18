@@ -8,7 +8,7 @@ const Footer = () => {
     const resumeClick = () => {
    
         const link = document.createElement("a");
-        link.href = "/src/resume/Resume - Euan Lim.pdf"; // replace with the path to your resume file
+        link.href = "https://drive.google.com/drive/folders/1KsasZa-D9Jzk-DCTVKUEqwWSkDWuEJEs?usp=share_link"; 
         link.target = "_blank";
         document.body.appendChild(link);
         link.click();

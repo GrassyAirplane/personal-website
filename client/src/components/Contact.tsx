@@ -26,7 +26,7 @@ const Contact = () => {
             confirmButtonText: 'Send',
             focusConfirm: false,
             preConfirm: () => {
-                const message = Swal.getPopup().querySelector('#message').value
+                const message = (Swal.getPopup()!.querySelector('#message') as HTMLInputElement).value
                 if (!message) {
                     Swal.showValidationMessage('Message is required');
                 }
