@@ -70,6 +70,11 @@ section.about-section {
     margin: 0rem 0 1rem 0;
 }
 
+.additional-padding {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1rem!important; 
+}
+
 .about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

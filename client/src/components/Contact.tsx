@@ -7,7 +7,7 @@ const Contact = () => {
     useEffect(() => {
         const sr = ScrollReveal({ viewFactor: 0.5,});
         sr.reveal('.article-animation', {
-            duration: 400,
+            duration: 600,
             distance: '2rem',
             easing: 'ease-out',
             origin: 'bottom',

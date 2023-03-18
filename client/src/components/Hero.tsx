@@ -128,15 +128,17 @@ const Hero = () => {
                         </article>
                     </section>
                 </a>
-                <section className='fourth-section hero-section'>
-                    <article className='hero-article'>
-                        <h1 className='hero-heading-regular' style={{whiteSpace: 'nowrap'}}>I Play</h1>
-                        <h2 className='hero-subheading-special' style={{whiteSpace: 'nowrap'}}> Hobbies & Interest's</h2>
-                    </article>
-                    <article className='hero-image'>
-                        <img className='right-icon' src={rightIcon}></img>
-                    </article>
-                </section>
+                <a href='#section-contact'>
+                    <section className='fourth-section hero-section'>
+                        <article className='hero-article'>
+                            <h1 className='hero-heading-regular' style={{whiteSpace: 'nowrap'}}>Interested?</h1>
+                            <h2 className='hero-subheading-special' style={{whiteSpace: 'nowrap'}}>Send me an email</h2>
+                        </article>
+                        <article className='hero-image'>
+                            <img className='right-icon' src={rightIcon}></img>
+                        </article>
+                    </section>
+                </a>
             </main>
         </>
     )

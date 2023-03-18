@@ -2,6 +2,10 @@ import './Build.css'
 import plus from '../assets/plus-svgrepo-com.svg'
 import { useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal'
+import star from '../assets/star-2-svgrepo-com.svg'
+import gitIcon from '../assets/github-svgrepo-com.svg'
+import webIcon from '../assets/website.svg'
+
 
 const Build = () => {
     const [rotateState, setRotateState] = useState([false, false, false, false, false])
@@ -68,11 +72,14 @@ const Build = () => {
             <div className='card-container'>
                 <article className='build-card'>
                     <h2 className='special-text about-content-title'>My Builds</h2>
-                    <ul className='about-content-list'>
-                        <li>Listed are my projects</li>
-                        <li></li>
-                        <li>Majority are React Based</li>
-                        <li>Click the Plus Sign!</li>
+                    <ul className='about-content-list about-content-extra'>
+                        <li className='content'> The year it was built.</li>
+                        <li className='content'> The purpose of the project.</li>
+                        <li className='content'> The name of the project.</li>
+                        <li className='content'> Click on the plus to view!</li>
+                        {/* <li>The year it was built</li>
+                        <li>Purpose of the project</li>
+                        <li>Name of the project</li> */}
                     </ul>
                 </article>
             </div>
@@ -92,7 +99,7 @@ const Build = () => {
                     </div>
                     <div className={`build-content ${displayState[0] ? 'hidden' : ''}`}>
                         <div className='inner-build-content'>
-                            <p>Missing Web Tracker is a...</p>
+                            <p>Incomplete</p>
                         </div>
                     </div>
                 </article>
@@ -111,7 +118,21 @@ const Build = () => {
                     </div>
                     <div className={`build-content ${displayState[1] ? 'hidden' : ''}`}>
                         <div className='inner-build-content'>
-                            <p>Missing Web Tracker is a...</p>
+                            <ul>
+                                <li><img className='star' src={star}/>React & Vite</li>
+                                <li><img className='star' src={star}/>Redux</li>
+                                <li><img className='star' src={star}/>Node Js</li>
+                                <li><img className='star' src={star}/>Springboot</li>
+                                <li><img className='star' src={star}/><a href='https://github.com/GrassyAirplane/missing-web-tracker' target="_blank"><img className='star' src={gitIcon}/></a></li>                            
+                            </ul>
+                            {/* <ul>
+                                <li>Missing-Web-Tracker is a web application that tracks missing people and pets.</li>
+                                <li>It provides a one-stop website for tracking missing individuals and pets.</li>
+                                <li>Users are offered comprehensive and geographical clues to help investigators understand the situation better.</li>
+                                <li>The application scrapes the web for the latest information.</li>
+                                <li>Users and officials can create accounts on Missing-Web-Tracker.</li>
+                                <li>They can post new information to keep the search up-to-date.</li>
+                            </ul> */}
                         </div>
                     </div>
                 </article>
@@ -130,7 +151,17 @@ const Build = () => {
                     </div>
                     <div className={`build-content ${displayState[2] ? 'hidden' : ''}`}>
                         <div className='inner-build-content'>
-                            <p>Missing Web Tracker is a...</p>
+                            <ul>
+                                <li><img className='star' src={star}/>React & Vite</li>
+                                <li><img className='star' src={star}/>NodeJs</li>
+                                <li><img className='star' src={star}/>Typescript</li>
+                                <li><img className='star' src={star}/>Python</li>
+                                <li><img className='star' src={star}/>Tesseract</li>
+                                <li><img className='star' src={star}/>OpenCV</li>
+                                <li><img className='star' src={star}/>Docker</li>
+                                <li><img className='star' src={star}/><a href='https://kohharuki.github.io/SummerHack2023/' target="_blank"><img className='star' src={webIcon}/></a></li>
+                                <li><img className='star' src={star}/><a href='https://github.com/KohHaruki/SummerHack2023' target="_blank"><img className='star' src={gitIcon}/></a></li>
+                            </ul>
                         </div>
                     </div>
                 </article>
@@ -149,7 +180,15 @@ const Build = () => {
                     </div>
                     <div className={`build-content ${displayState[3] ? 'hidden' : ''}`}>
                         <div className='inner-build-content'>
-                            <p>Missing Web Tracker is a...</p>
+                            <ul>
+                                <li><img className='star' src={star}/>React & Vite</li>
+                                <li><img className='star' src={star}/>Redux</li>
+                                <li><img className='star' src={star}/>NodeJs</li>
+                                <li><img className='star' src={star}/>Typescript</li>
+                                <li><img className='star' src={star}/>Solidity</li>
+                                <li><img className='star' src={star}/><a href='https://bonzonic.github.io/KL-Mini-Hack/' target="_blank"><img className='star' src={webIcon}/></a></li>
+                                <li><img className='star' src={star}/><a href='https://github.com/bonzonic/KL-Mini-Hack' target="_blank"><img className='star' src={gitIcon}/></a></li>
+                            </ul>
                         </div>
                     </div>
                 </article>
@@ -168,7 +207,13 @@ const Build = () => {
                     </div>
                     <div className={`build-content ${displayState[4] ? 'hidden' : ''}`}>
                         <div className='inner-build-content'>
-                            <p>Missing Web Tracker is a...</p>
+                        <ul>
+                            <li><img className='star' src={star}/>Html</li>
+                            <li><img className='star' src={star}/>CSS</li>
+                            <li><img className='star' src={star}/>Javascript</li>
+                            <li><img className='star' src={star}/><a href='https://grassyairplane.github.io/grades-web-app/' target="_blank"><img className='star' src={webIcon}/></a></li>
+                            <li><img className='star' src={star}/><a href='https://github.com/GrassyAirplane/grades-web-app' target="_blank"><img className='star' src={gitIcon}/></a></li>
+                        </ul>
                         </div>
                     </div>
                 </article>

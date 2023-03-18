@@ -13,11 +13,12 @@ main {
 }
 
 .third-section {
-    background-color:  #FF0000;
+    background-color:  #31B19E;
 }
 
 .fourth-section {
-    background-color: #008080;
+    /* background-color: #008080; */
+    background-color: #f79f87;
 }
 
 .hero-article {

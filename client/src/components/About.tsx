@@ -31,7 +31,7 @@ const About = () => {
                 <div className='about-first'>
                     <div className='about-content-div'>
                         <h2 className='special-text about-content-title'>About Me</h2>
-                        <ul className='about-content-list'>
+                        <ul className='about-content-list additional-padding'>
                             <li>I'm Euan Lim</li>
                             <li>Full Stack Developer</li>
                             <li>CompSci student @ Monash</li>

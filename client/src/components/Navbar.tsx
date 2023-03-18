@@ -108,7 +108,7 @@ const Navbar = () => {
                     <li className='about'><a href="#about-section">About</a></li>
                     <li className='experience'><a href="#experience-section">Experience</a></li>
                     <li className='project'><a href='#build-section'>Projects </a></li>
-                    <li className='interest'>Interests </li>
+                    {/* <li className='interest'><a href='#interest-section'>Interests</a></li> */}
                     <li className='contact gold'><a href='#section-contact'>Contact</a></li>
                 </ul>
                 <div className='icons'>

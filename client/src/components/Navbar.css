@@ -60,11 +60,12 @@
 }
 
 .project:hover {
-    color: #FF0000;
+    color: #31B19E;
 }
 
 .interest:hover {
-    color: #008080;
+    color: #f79f87;
+    /* color: #008080; */
 }
 
 .gold:hover {
