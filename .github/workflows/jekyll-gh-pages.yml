@@ -31,6 +31,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y nodejs npm
           sudo npm install -g vite
+      - name: Navigate to client directory
+        run: cd client
+      - name: Install dependencies
+        run: npm install
       - name: Build Vite project
         run: npm run build
       - name: Upload artifact
@@ -54,7 +58,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./dist
+          source: ./client/dist
           destination: ./docs
       - name: Deploy to GitHub Pages
         id: deployment
