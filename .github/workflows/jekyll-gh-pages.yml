@@ -32,8 +32,7 @@ jobs:
           sudo apt-get install -y nodejs npm
           sudo npm install -g vite
       - name: Install dependencies
-        run: cd client
-        run: npm install
+        run: cd client && npm install
       - name: Build Vite project
         run: npm run build
       - name: Upload artifact
