@@ -4,6 +4,10 @@ main {
     place-items: left;
 }
 
+.hero-heading:hover {
+    transform: scale(1)!important;
+}
+
 .first-section {
     background-color: #D661FF;
 }
