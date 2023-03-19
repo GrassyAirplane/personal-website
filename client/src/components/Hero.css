@@ -1,6 +1,6 @@
 main {
     font-family: 'Roobert', sans-serif;
-    height: 100%;   
+    min-height: 100vh;   
     place-items: left;
 }
 
@@ -39,7 +39,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     align-items: center; /* Vertically center the content */
-    max-height: 20rem;
+    min-height: 10rem;
     border-bottom: 2px solid black;
     cursor: pointer;
 }
