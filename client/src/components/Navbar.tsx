@@ -17,7 +17,7 @@ const Navbar = () => {
             distance: '20px',
             easing: 'ease-out',
             origin: 'top',
-            reset: true,
+            reset: false,
             viewFactor: 0.2,
             delay: 200,
         });
@@ -27,7 +27,7 @@ const Navbar = () => {
             distance: '20px',
             easing: 'ease-out',
             origin: 'top',
-            reset: true,
+            reset: false,
             viewFactor: 0.2,
             delay: 700,
         });
@@ -37,7 +37,7 @@ const Navbar = () => {
             distance: '20px',
             easing: 'ease-out',
             origin: 'top',
-            reset: true,
+            reset: false,
             viewFactor: 0.2,
             delay: 900,
         });
@@ -47,7 +47,7 @@ const Navbar = () => {
             distance: '20px',
             easing: 'ease-out',
             origin: 'top',
-            reset: true,
+            reset: false,
             viewFactor: 0.2,
             delay: 1100,
         });
@@ -89,7 +89,7 @@ const Navbar = () => {
         //     // text: "Download my Resume?",
         //     icon: 'warning',
         //     iconColor: 'black',
-        //     showCancelButton: true,
+        //     showCancelButton: false,
         //     confirmButtonColor: '#3085d6',
         //     cancelButtonColor: '#d33',
         //     confirmButtonText: 'Preview',
