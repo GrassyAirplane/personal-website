@@ -39,7 +39,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     align-items: center; /* Vertically center the content */
-    min-height: 12rem;
+    min-height: 13rem;
     border-bottom: 2px solid black;
     cursor: pointer;
 }

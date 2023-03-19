@@ -32,6 +32,66 @@ const Hero = () => {
         }
 
     }
+    // useEffect(() => {
+    //     const sr = ScrollReveal({ viewFactor: 0.0,});
+    //     sr.reveal('.first-section', {
+    //         duration: 200,
+    //         distance: '50rem',
+    //         easing: 'ease-out',
+    //         origin: 'left',
+    //         reset: false,
+    //         delay: 1400,
+    //     });
+    //     sr.reveal('.second-section', {
+    //         duration: 200,
+    //         distance: '50rem',
+    //         easing: 'ease-out',
+    //         origin: 'left',
+    //         reset: false,
+    //         delay: 1500,
+    //     });
+    //     sr.reveal('.third-section', {
+    //         duration: 200,
+    //         distance: '50rem',
+    //         easing: 'ease-out',
+    //         origin: 'left',
+    //         reset: false,
+    //         delay: third_getDelay(160),
+    //     });
+    //     sr.reveal('.fourth-section', {
+    //         duration: 200,
+    //         distance: '50rem',
+    //         easing: 'ease-out',
+    //         origin: 'left',
+    //         reset: false,
+    //         delay:  fourth_getDelay(170),
+    //     });
+    //     sr.reveal('.hero-heading', {
+    //         duration: 200,
+    //         distance: '10px',
+    //         easing: 'ease-out',
+    //         origin: 'bottom',
+    //         reset: false,
+    //         delay: 1600,
+    //     });
+    //     sr.reveal('.special-heading', {
+    //         duration: 200,
+    //         distance: '10px',
+    //         easing: 'ease-out',
+    //         origin: 'bottom',
+    //         reset: false,
+    //         delay: third_getDelay(160),
+    //     })
+    //     sr.reveal('.hero-subheading', {
+    //         duration: 200,
+    //         distance: '10px',
+    //         easing: 'ease-out',
+    //         origin: 'bottom',
+    //         reset: false,
+    //         delay: third_getDelay(180),
+    //     });
+    // }, []);
+
     useEffect(() => {
         const sr = ScrollReveal({ viewFactor: 0.0,});
         sr.reveal('.first-section', {
@@ -64,7 +124,7 @@ const Hero = () => {
             easing: 'ease-out',
             origin: 'left',
             reset: false,
-            delay:  fourth_getDelay(170),
+            delay:  0,
         });
         sr.reveal('.hero-heading', {
             duration: 200,
