@@ -100,7 +100,7 @@ const Build = () => {
                         </div>
                         <div className={`build-content ${displayState[0] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
-                                <p>Incomplete</p>
+                                <p>In Progress... Check out the other tabs. </p>
                             </div>
                         </div>
                     </article>
@@ -119,6 +119,9 @@ const Build = () => {
                         </div>
                         <div className={`build-content ${displayState[1] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
+                                <div className='build-description'>
+                                    Web app for determining the precise last seen location and displaying geolocation data of missing persons and pets, from both scraped data and randomly generated test cases.
+                                </div>
                                 <ul>
                                     <li><img className='star' src={star}/>React & Vite</li>
                                     <li><img className='star' src={star}/>Redux</li>
@@ -152,6 +155,9 @@ const Build = () => {
                         </div>
                         <div className={`build-content ${displayState[2] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
+                                <div className='build-description'>
+                                    web application that simplifies the process of data collection for data scientists. The app extracts tabular data from PNG, JPG, or PDF files uploaded by the user and converts it into a downloadable CSV file. A majority of data scientists' time and effort is spent on collecting, cleaning, and preparing of data for analysis. Our project hopes to minimise such overhead.
+                                </div>
                                 <ul>
                                     <li><img className='star' src={star}/>React & Vite</li>
                                     <li><img className='star' src={star}/>NodeJs</li>
@@ -181,6 +187,9 @@ const Build = () => {
                         </div>
                         <div className={`build-content ${displayState[3] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
+                                <div className='build-description'>
+                                    Cast a secure, anonymous vote and earn a cabbage coin as reward with our zero-knowledge voting app! Revolutionize the way we vote and get rewarded! Web app that offers admin dashboard for adding election runners, profile sections for users, login system for users, voting functionality for users. 
+                                </div>
                                 <ul>
                                     <li><img className='star' src={star}/>React & Vite</li>
                                     <li><img className='star' src={star}/>Redux</li>
@@ -208,13 +217,16 @@ const Build = () => {
                         </div>
                         <div className={`build-content ${displayState[4] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
-                            <ul>
-                                <li><img className='star' src={star}/>Html</li>
-                                <li><img className='star' src={star}/>CSS</li>
-                                <li><img className='star' src={star}/>Javascript</li>
-                                <li><img className='star' src={star}/><a href='https://grassyairplane.github.io/grades-web-app/' target="_blank"><img className='star' src={webIcon}/></a></li>
-                                <li><img className='star' src={star}/><a href='https://github.com/GrassyAirplane/grades-web-app' target="_blank"><img className='star' src={gitIcon}/></a></li>
-                            </ul>
+                                <div className='build-description'>
+                                        My very first project outside of school work, built purely in native html, javascript and css. Displaying the total average grades[Numerical] per course in CIMP, with collected data. 
+                                </div>
+                                <ul>
+                                    <li><img className='star' src={star}/>Html</li>
+                                    <li><img className='star' src={star}/>CSS</li>
+                                    <li><img className='star' src={star}/>Javascript</li>
+                                    <li><img className='star' src={star}/><a href='https://grassyairplane.github.io/grades-web-app/' target="_blank"><img className='star' src={webIcon}/></a></li>
+                                    <li><img className='star' src={star}/><a href='https://github.com/GrassyAirplane/grades-web-app' target="_blank"><img className='star' src={gitIcon}/></a></li>
+                                </ul>
                             </div>
                         </div>
                     </article>

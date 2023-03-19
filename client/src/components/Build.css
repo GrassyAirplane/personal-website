@@ -109,6 +109,11 @@ ul {
 .inner-build-content {
     margin-right: 3rem;
     margin-left: 3rem;
+    display: flex;
+}
+
+.build-description {
+    max-width: 20rem;
 }
 
 h2 {
@@ -152,6 +157,10 @@ p {
 }
 
 @media (max-width: 857px) {
+    .inner-build-content {
+        display: grid;
+    }
+
     .build-heading-left-title {
         display: none;
     }
