@@ -156,7 +156,7 @@ const Build = () => {
                         <div className={`build-content ${displayState[2] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
                                 <div className='build-description'>
-                                    web application that simplifies the process of data collection for data scientists. The app extracts tabular data from PNG, JPG, or PDF files uploaded by the user and converts it into a downloadable CSV file. A majority of data scientists' time and effort is spent on collecting, cleaning, and preparing of data for analysis. Our project hopes to minimise such overhead.
+                                    Web application that simplifies the process of data collection for data scientists. The app extracts tabular data from PNG, JPG, or PDF files uploaded by the user and converts it into a downloadable CSV file. A majority of data scientists' time and effort is spent on collecting, cleaning, and preparing of data for analysis. Our project hopes to minimise such overhead. Heavily inspired by my time and project @Urbanmetry
                                 </div>
                                 <ul>
                                     <li><img className='star' src={star}/>React & Vite</li>
