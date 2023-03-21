@@ -172,6 +172,10 @@ p {
     .about-content-extra {
         display: none!important;
     }
+
+    .build-section {
+        min-height: 50vh;
+    }
 }
 
 ul {
