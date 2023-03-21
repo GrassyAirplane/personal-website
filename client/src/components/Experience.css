@@ -12,10 +12,11 @@ section.experience-section h2 {
     margin: 0;
 }
 
-.experience-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+article.experience-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center; 
 }
 
 .trapezoid {
@@ -43,24 +44,34 @@ section.experience-section h2 {
 }
 
 
-@media screen and (max-width: 800px) {
-    .experience-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width: 1021px) {
 
-        transform: skew(20deg) scale(.8);
+    
+    article.experience-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem;
     }
+
 
     .trapezoid {
         margin-top: 2rem;
         margin-bottom: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        transform: skew(0) scale(1);
+    }
+
+    
+    .trapezoid:hover {
+        transform: translateY(15px) translateX(15px) skew(0);
+        box-shadow: 0px 0px 0 0 #0d0d0d;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
     .experience-content {
-        transform: scale(.75);
+        transform: skew(0) scale(.8);
+        margin: 0!important;
     }
 }
