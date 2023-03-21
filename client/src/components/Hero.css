@@ -68,6 +68,11 @@ main {
 .hero-heading-regular {
     font-size: 5rem;
     margin: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .hero-heading:hover {
