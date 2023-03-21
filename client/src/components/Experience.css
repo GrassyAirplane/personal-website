@@ -50,11 +50,17 @@ section.experience-section h2 {
         justify-content: center;
         align-items: center;
 
-        transform: skew(20deg) scale(.7);
+        transform: skew(20deg) scale(.8);
     }
 
     .trapezoid {
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .experience-content {
+        transform: scale(.75);
     }
 }
