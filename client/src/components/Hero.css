@@ -109,3 +109,8 @@ main {
     font-size: 100%;
 }
 
+@media (max-width: 450px) {
+    .hero-article {
+        padding-left: .5rem;
+    }
+}
