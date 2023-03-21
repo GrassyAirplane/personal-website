@@ -71,12 +71,12 @@ em {
 
 @media screen and (max-width: 800px) {
     .article-contact {
-        transform: scale(1);
+        transform: scale(.8);
         box-shadow: 10px 10px 0 0 #0d0d0d;
     }
 
     .article-contact:hover {
-        transform: translateY(10px) translateX(10px) scale(1);
+        transform: translateY(10px) translateX(10px) scale(.8);
     }
 }
 
