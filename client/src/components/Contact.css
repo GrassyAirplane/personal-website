@@ -89,5 +89,9 @@ em {
     .article-contact:hover {
         transform: translateY(10px) translateX(10px) scale(.7);
     }
+
 }
 
+.article-animation {
+    max-width: 100%;
+}
