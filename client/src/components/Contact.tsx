@@ -46,8 +46,8 @@ const Contact = () => {
                 setTimeout(()=> {
                     Swal.fire({
                         icon: 'success',
-                        title: 'Success!',
-                        text: 'Message is sent to my Discord.',
+                        title: 'Message sent to my Discord!',
+                        text: 'I will get back to you as soon as possible (:',
                       })
                 }, 800)
             }
