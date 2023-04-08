@@ -2,6 +2,7 @@ import './Contact.css'
 import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react';
 import Swal from 'sweetalert2';
+import axios from 'axios';
 
 const Contact = () => {
     useEffect(() => {
@@ -25,20 +26,28 @@ const Contact = () => {
             `,
             confirmButtonText: 'Send',
             focusConfirm: false,
-            preConfirm: () => {
-                const message = (Swal.getPopup()!.querySelector('#message') as HTMLInputElement).value
-                if (!message) {
+            preConfirm: async () => {
+                const messageInput = (Swal.getPopup()!.querySelector('#message') as HTMLInputElement).value
+                if (!messageInput) {
                     Swal.showValidationMessage('Message is required');
                 }
-                return { message };
+
+                const webhookUrl = "https://discord.com/api/webhooks/1094126489294876682/Uia76bSR26mxWvb7xmZS8c-1DgFb5y_fTJJF8eipeE6NEp_CLo9FlxcszFyuytccPNm5";
+               
+                const message = messageInput + " @everyone";
+
+                await axios.post(webhookUrl, { content: message });
+
+                return { messageInput };
             },
-        }).then((result) => {
+        }).then(async(result) => {
             if (result.isConfirmed) {
+            //Send message to Discord webhook
                 setTimeout(()=> {
                     Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Discord Bot is not running!',
+                        icon: 'success',
+                        title: 'Success!',
+                        text: 'Message is sent to my Discord.',
                       })
                 }, 800)
             }
