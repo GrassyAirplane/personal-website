@@ -88,9 +88,9 @@ const Build = () => {
                     <article id='build-1'>
                         <div className='build-heading' id='build-first-heading'>
                             <div className='build-heading-left'>
-                                <h2 className='build-heading-left-date'>Current</h2>
-                                <h3 className='build-heading-left-type'>Hackathon</h3>
-                                <p className='build-heading-left-title'>cabbage-trash</p>
+                                <h2 className='build-heading-left-date'>2023</h2>
+                                <h3 className='build-heading-left-type'>Personal</h3>
+                                <p className='build-heading-left-title'>pern-todo</p>
                             </div>
                             <img
                                 className={`build-plus ${rotateState[0] ? 'rotate' : ''}`}
@@ -100,7 +100,16 @@ const Build = () => {
                         </div>
                         <div className={`build-content ${displayState[0] ? 'hidden' : ''}`}>
                             <div className='inner-build-content'>
-                                <p>In Progress... Check out the other tabs. </p>
+                            <div className='build-description'>
+                                    Webapp Todo List Tracker, with basic CRUD operations & PostgreSQLdatabase. Allowing for Creating todos, updating & editing todos & deleting todos.  
+                                </div>
+                                <ul>
+                                    <li><img className='star' src={star}/>React & Vite</li>
+                                    <li><img className='star' src={star}/>Express</li>
+                                    <li><img className='star' src={star}/>Node Js</li>
+                                    <li><img className='star' src={star}/>PostgreSQL</li>
+                                    <li><img className='star' src={star}/><a href='https://github.com/GrassyAirplane/todo-postgres' target="_blank"><img className='star' src={gitIcon}/></a></li>                            
+                                </ul>
                             </div>
                         </div>
                     </article>
