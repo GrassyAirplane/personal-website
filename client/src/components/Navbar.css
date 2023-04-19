@@ -111,6 +111,8 @@
 
 .hamburger-icon {
     display: none;
+    z-index: 9999;
+    text-align: center;
 }
 
 .icons {
@@ -141,6 +143,7 @@
     border-style: solid !important;
     border-width: 2px !important;
     border-color: #0d0d0d #000 #000 !important;
+    max-width: 80% !important;
 }
 
 .swal2-title {
@@ -177,4 +180,49 @@
     cursor: pointer;
     width: 6rem;
     font-family: 'Roobert', sans-serif;
+}
+
+.mobile-navigation {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    margin-top: auto;
+    /* padding-top: 10rem; */
+    display: flex;
+}
+
+.mobile-navigation-list {
+    margin: auto;
+    /* height: 100%; */
+    padding: auto;
+}
+
+
+.mobile-navigation-list li{
+    margin: auto;
+  /* margin: 10px 0; */
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.mobile-navigation-bar-icons {
+    max-height: 2rem;
+    max-width: 2rem;
+    margin: .5rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.fast-dissapear {
+    transition: 0!important;
+    max-height: 2rem;
+    max-width: 2rem;
 }

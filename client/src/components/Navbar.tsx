@@ -9,6 +9,9 @@ import hamburgerIcon from '../assets/hamburger-svgrepo-com.svg'
 import Swal from 'sweetalert2'
 
 const Navbar = () => {
+
+    
+
     useEffect(() => {
         const sr = ScrollReveal();
 
@@ -62,7 +65,8 @@ const Navbar = () => {
     };
 
     const hamburgerClick = () => {
-
+        const radioSection = document.querySelector('.mobile-navigation')
+        radioSection?.classList.toggle('hidden')
     }
       
     const resumeClick = () => {
@@ -127,10 +131,30 @@ const Navbar = () => {
                             <img className="navigation-bar-icons third-icon" src={resumeIcon}></img>
                         </div>
                     </section>
-                <li className='special-li hamburger-icon' onClick={hamburgerClick}><img className='home-bar-icon' src={hamburgerIcon}></img></li>
-            
+                <li className='special-li hamburger-icon'onClick={hamburgerClick}>
+                    <img className='home-bar-icon' src={hamburgerIcon}></img></li>
                 </div>
+
                 </nav>
+                <div className='mobile-navigation hidden'>
+                    <ul className='mobile-navigation-list' onClick={hamburgerClick}>
+                        <li className=''><img className='fast-dissapear' src={homeIcon} onClick={handleClick}></img></li>
+                        <li className='about'><a href="#about-section">About</a></li>
+                        <li className='experience'><a href="#experience-section">Experience</a></li>
+                        <li className='project'><a href='#build-section'>Projects </a></li>
+                        {/* <li className='interest'><a href='#interest-section'>Interests</a></li> */}
+                        <li className='contact gold'><a href='#section-contact'>Contact</a></li>
+                        <li className='nav-icon-section'>
+                            <a className='fast-dissapear' href='https://github.com/GrassyAirplane' target='_blank'>
+                                <img className="mobile-navigation-bar-icons " src={gitIcon} alt='GitHub icon' />
+                            </a>
+                            <a className='fast-dissapear' href='https://www.linkedin.com/in/euan-lim-013181235/' target='_blank'>
+                                <img className="mobile-navigation-bar-icons " src={linkedIcon}></img>
+                            </a>
+                            <img onClick={resumeClick}  className="mobile-navigation-bar-icons fast-dissapear" src={resumeIcon}></img>
+                        </li>
+                    </ul>   
+                </div>
         </>
     )
 }

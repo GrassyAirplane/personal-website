@@ -6,6 +6,8 @@ import Footer from "../components/Footer"
 import Contact from "../components/Contact"
 import Build from "../components/Build"
 import Interests from "../components/Interests"
+import Scroll from "../components/Scroll"
+import MoveStuffAround from "../components/MoveStuffAround"
 
 const Home = () => {
     return (
@@ -14,6 +16,7 @@ const Home = () => {
             <Hero/>
             <About/>
             <Experience/>
+            <Scroll />
             <Build />
             {/* <Interests /> */}
             <Contact />
