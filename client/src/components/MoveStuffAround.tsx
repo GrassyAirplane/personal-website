@@ -1,15 +1,15 @@
 import React from 'react'
-import Ticker from 'react-ticker'
+// import Ticker from 'react-ticker'
 
 const MoveStuffAround = () => (
-    <Ticker>
-        {({ index }) => (
-            <>
-                <h1>This is the Headline of element #{index}!</h1>
+    // <Ticker>
+    //     {({ index }) => (
+    //         <>
+    //             <h1>This is the Headline of element #{index}!</h1>
 
-            </>
-        )}
-    </Ticker>
+    //         </>
+    //     )}
+    // </Ticker>
 )
 
 export default MoveStuffAround
