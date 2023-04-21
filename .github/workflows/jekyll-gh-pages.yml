@@ -53,13 +53,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          sudo gem install jekyll bundler
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: client/dist
-          destination: ./client/docs
+        run: |
+          cd client
+          bundle install
+          bundle exec jekyll build --destination docs
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
