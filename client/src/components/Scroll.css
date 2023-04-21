@@ -1,0 +1,27 @@
+.section-scroll {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.scroll {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(#000000, 0.5);
+}
+
+div.scroll-div {
+    font-weight: 900;
+    font-size: 4em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #212121;
+    background-color: #fff;
+    will-change: transform;
+}
+
+span.span-scroll {
+    -webkit-text-stroke: 2px #000000;
+    color: #ffffff;
+}
