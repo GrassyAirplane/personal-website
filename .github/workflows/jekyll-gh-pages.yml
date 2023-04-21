@@ -24,12 +24,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Node.js and Vite
+      - name: Install Vite
         run: |
-          sudo apt-get update
-          sudo apt-get install -y nodejs npm
           sudo npm install -g vite
       - name: Install dependencies
         run: cd client && npm install
