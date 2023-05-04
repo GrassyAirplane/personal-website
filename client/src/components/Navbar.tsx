@@ -10,9 +10,8 @@ import Swal from 'sweetalert2'
 import { Fancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
-const Navbar = () => {
 
-    
+const Navbar = () => {
 
     useEffect(() => {
         const sr = ScrollReveal();
@@ -72,10 +71,11 @@ const Navbar = () => {
     }
       
     const resumeClick = () => {
-
+        
         const fancybox = new Fancybox([
             {
               src: '<img class="img-resume" src="../../public/resume.jpg" alt="Resume" />',
+              // @ts-ignore
               type: "html",
             },
           ]);
