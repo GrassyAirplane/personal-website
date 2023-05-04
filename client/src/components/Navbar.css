@@ -120,6 +120,9 @@
     margin-left: auto;
 }
 
+.img-resume {
+    width: 60vw;
+}
 
 
 @media (max-width: 650px) {
@@ -128,6 +131,9 @@
     }
     .navigation-bar-icons {
       display: none;
+    }
+    .dissapear {
+        display: none;
     }
     .hamburger-icon {
         display: block;

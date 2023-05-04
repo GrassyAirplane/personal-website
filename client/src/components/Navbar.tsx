@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import ScrollReveal from 'scrollreveal'
 import './Navbar.css'
 import homeIcon from '../assets/home-alt-svgrepo-com.svg'
@@ -7,6 +7,8 @@ import linkedIcon from '../assets/linkedin-svgrepo-com.svg'
 import resumeIcon from '../assets/resume-4-svgrepo-com.svg'
 import hamburgerIcon from '../assets/hamburger-svgrepo-com.svg'
 import Swal from 'sweetalert2'
+import { Fancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
 const Navbar = () => {
 
@@ -70,13 +72,23 @@ const Navbar = () => {
     }
       
     const resumeClick = () => {
+
+        const fancybox = new Fancybox([
+            {
+              src: '<img class="img-resume" src="../../public/resume.jpg" alt="Resume" />',
+              type: "html",
+            },
+          ]);
+          
+        fancybox
    
-        const link = document.createElement("a");
-        link.href = "https://drive.google.com/drive/folders/1KsasZa-D9Jzk-DCTVKUEqwWSkDWuEJEs?usp=share_link"; // replace with the path to your resume file
-        link.target = "_blank";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // const link = document.createElement("a");
+        // link.href = "https://drive.google.com/drive/folders/1KsasZa-D9Jzk-DCTVKUEqwWSkDWuEJEs?usp=share_link"; // replace with the path to your resume file
+        // link.target = "_blank";
+        // document.body.appendChild(link);
+        // link.click();
+        // document.body.removeChild(link);
+
         // const MySwal = Swal.mixin({
         //     customClass: {
         //       title: 'alert-title',
@@ -111,7 +123,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="navigation-bar">
-                    <li className='special-li' onClick={handleClick}><img className='home-bar-icon' src={homeIcon}></img></li>
+                    <li className='special-li dissapear' onClick={handleClick}><img className='home-bar-icon' src={homeIcon}></img></li>
                 <ul className='navigation-list'>
                     <li className='about'><a href="#about-section">About</a></li>
                     <li className='experience'><a href="#experience-section">Experience</a></li>
