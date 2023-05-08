@@ -121,7 +121,8 @@
 }
 
 .img-resume {
-    width: 60vw;
+    max-width: 100%;
+
 }
 
 

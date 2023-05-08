@@ -7,9 +7,7 @@ import linkedIcon from '../assets/linkedin-svgrepo-com.svg'
 import resumeIcon from '../assets/resume-4-svgrepo-com.svg'
 import hamburgerIcon from '../assets/hamburger-svgrepo-com.svg'
 import Swal from 'sweetalert2'
-import { Fancybox } from "@fancyapps/ui"
-import "@fancyapps/ui/dist/fancybox/fancybox.css"
-
+import resume from '../assets/resume.jpg'
 
 const Navbar = () => {
 
@@ -71,53 +69,13 @@ const Navbar = () => {
     }
       
     const resumeClick = () => {
-        
-        const fancybox = new Fancybox([
-            {
-              src: '<img class="img-resume" src="../../public/resume.jpg" alt="Resume" />',
-              // @ts-ignore
-              type: "html",
-            },
-          ]);
+        Swal.fire({
+            title: 'Resume',
+            html: `<img class="img-resume" src="${resume}" alt="resume"></img>`,
+            confirmButtonText: 'Okay',
+            focusConfirm: false,
+        })
           
-        fancybox
-   
-        // const link = document.createElement("a");
-        // link.href = "https://drive.google.com/drive/folders/1KsasZa-D9Jzk-DCTVKUEqwWSkDWuEJEs?usp=share_link"; // replace with the path to your resume file
-        // link.target = "_blank";
-        // document.body.appendChild(link);
-        // link.click();
-        // document.body.removeChild(link);
-
-        // const MySwal = Swal.mixin({
-        //     customClass: {
-        //       title: 'alert-title',
-        //       htmlContainer: 'alert-html-container',
-        //       confirmButton: 'alert-confirm-button',
-        //       cancelButton: 'alert-cancel-button',
-        //       popup: 'alert-popup'
-        //     },
-        //     buttonsStyling: false,
-        //   })
-
-        // MySwal.fire({
-        //     title: "Preview my Resume?",
-        //     // text: "Download my Resume?",
-        //     icon: 'warning',
-        //     iconColor: 'black',
-        //     showCancelButton: false,
-        //     confirmButtonColor: '#3085d6',
-        //     cancelButtonColor: '#d33',
-        //     confirmButtonText: 'Preview',
-        //   }).then((result) => {
-        //     if (result.isConfirmed) {
-        //       const link = document.createElement("a");
-        //       link.href = "/src/resume/Resume - Euan Lim.pdf"; // replace with the path to your resume file
-        //       link.target = "_blank";
-        //       document.body.appendChild(link);
-        //       link.click();
-        //       document.body.removeChild(link);
-        //     }})
     }
 
     return (
