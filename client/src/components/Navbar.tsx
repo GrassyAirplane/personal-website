@@ -75,7 +75,6 @@ const Navbar = () => {
             confirmButtonText: 'Okay',
             focusConfirm: false,
         })
-          
     }
 
     return (
