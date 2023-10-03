@@ -1,7 +1,8 @@
 main {
     font-family: 'Roobert', sans-serif;
-    min-height: 100vh;   
+    /* min-height: 100vh;    */
     place-items: left;
+    background-color: #D661FF;
 }
 
 .hero-heading:hover {
@@ -42,7 +43,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center; /* Vertically center the content */
-    min-height: 13rem;
+    min-height: 15rem;
     border-bottom: 2px solid black;
     cursor: pointer;
 }
